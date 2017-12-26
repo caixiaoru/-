@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热门行程内容页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link rel="stylesheet" href="css/commen.css">
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy2">
+<div class="container-fluid">
+    <!--顶部-->
+    <div class="row clearfix top" id="road_top">
+        <div class="col-md-12 column">
+            <div class="row clearfix">
+                <div class="col-md-2 column">
+                </div>
+                <div class="col-md-8 column top_content">
+                    <div><img src="img/top_01.jpg"></div>
+                    <div>咨询电话：0311-66510</div>
+                </div>
+                <div class="col-md-2 column">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导航栏&&bannner&&中间部分-->
+    <div class="row clearfix" id="road_nav">
+        <div class="col-md-8 col-md-offset-2 middle">
+            <!--导航栏-->
+            <div class="row clearfix" id="my_nav">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand logo" href="index.html"><img src="img/logo.jpg"></a>
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#example-navbar-collapse">
+                                <span class="sr-only">切换导航</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">首页</a></li>
+                                <li><a href="list-visit.html">名企参观</a></li>
+                                <li><a href="list-inspects.html">行业考察</a></li>
+                                <li><a href="list_convention.html">会展中心</a></li>
+                                <li><a href="list-training.html">海外培训</a></li>
+                                <li><a href="list_cooperation.html">合作申请</a></li>
+                                <li><a href="list-about.html">关于我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--banner-->
+            <div class="row clearfix banner_top" id="my_banner">
+                <div class="col-md-12 column">
+                    <img src="img/banner_01.jpg">
+                </div>
+            </div>
+            <!--主体部分-->
+            <div class="row clearfix road_content_pay">
+                <!--面包屑-->
+                <div class="col-md-12  road_content_pay_broad" id="road_broad">
+                    <ul>
+                        <li><a href="index.html">首页</a>-></li>
+                        <li><a href="list-hot.html">热门行程</a>-></li>
+                        <li>肯尼亚</li>
+                    </ul>
+                </div>
+
+                <!--中间部分-->
+                <div class="col-md-12 column road_content_pay_body">
+                    <!--支付-->
+                    <div class="row clearfix road_content_pay_body1" id="road_pay">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 road_content_pay_con">
+                            <div class="road_content_pay_title">
+                                <p>肯尼亚+马林迪9日舒适版EY（7月11-19日）</p>
+                                <p><span>[编号EY007]</span><span>[上海出发]</span></p>
+                            </div>
+                            <!--图片切换-->
+                            <div class="row">
+                                <!--大图片-->
+                                <div class="road_content_pay_left_imgLG col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <img src="img/road_05.jpg" >
+                                </div>
+                                <!--小图片-->
+                                <div class="road_content_pay_left_imgSM row">
+                                    <div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1">
+                                        <img src="img/road_05.jpg" >
+                                    </div>
+                                    <div class="col-md-2 col-xs-2">
+                                        <img src="img/road_02.jpg" >
+                                    </div>
+                                    <div class="col-md-2 col-xs-2">
+                                        <img src="img/road_03.jpg" >
+                                    </div>
+                                    <div class="col-md-2 col-xs-2">
+                                        <img src="img/road_04.jpg" >
+                                    </div>
+                                    <div class="col-md-2 col-xs-2">
+                                        <img src="img/road_05.jpg" >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--备忘日历-->
+                            <div class="row clearfix road_content_pay_left_date">
+                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                    <div id="calendar" ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 road_content_pay_right">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-11">
+                                    <table class="road_content_pay_right_table01">
+                                        <tr class="row ">
+                                            <td class="col-md-3 col-lg-3 col-sm-4 col-xs-4">单价:</td>
+                                            <td class="col-md-9 col-lg-9 col-sm-8 col-xs-8"><span>￥9900</span>起<span>起价说明</span></td>
+                                        </tr>
+                                        <tr class="row ">
+                                            <td class="col-md-3">提前报名:</td>
+                                            <td class="col-md-9">不限日期</td>
+                                        </tr>
+                                        <tr class="row ">
+                                            <td class="col-md-3">首付出游:</td>
+                                            <td class="col-md-9"><span>￥2400</span>+<span>￥2700</span>/月*11个月</td>
+                                        </tr>
+                                        <tr class="row ">
+                                            <td class="col-md-3">付款方式:</td>
+                                            <td class="col-md-9">
+                                                <div class="row pay_style">
+                                                    <p class="col-md-3"><img src="img/pay_01.jpg">支付宝</p>
+                                                    <p class="col-md-3"><img src="img/pay_02.jpg">信用卡</p>
+                                                    <p class="col-md-3"><img src="img/pay_03.jpg">快捷支付</p>
+                                                    <p class="col-md-3"><img src="img/pay_04.jpg">网银支付</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                    <!--立即预定-->
+                                    <div class="road_content_pay_right_top">
+                                        <form>
+                                            <table>
+                                                <tr class="row">
+                                                    <td class="col-md-4 col-lg-4 col-sm-5 col-xs-5">选择班期:</td>
+                                                    <td class="col-md-8 col-lg-8 col-sm-7 col-xs-7">
+                                                        <label for="begin_date" class="sr-only">出发日期</label>
+                                                        <select id="begin_date">
+                                                            <option>--请选择出发日期--</option>
+                                                            <option>11月20日</option>
+                                                            <option>11月20日</option>
+                                                            <option>11月20日</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row">
+                                                    <td class="col-md-3">选择人数:</td>
+                                                    <td class="col-md-9">
+                                                        <span>成人</span>
+                                            <span>
+                                                <button type="button" class="btn">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </span>
+                                                        <label for="adult" class="sr-only">成人</label>
+                                                        <input type="text"  value="0" id="adult" >
+                                            <span class="icon-plus">
+                                                <button type="button" class="btn">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </span>
+                                                        <span>儿童</span>
+                                            <span>
+                                                <button type="button" class="btn">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </span>
+                                                        <label for="children" class="sr-only">儿童</label>
+                                                        <input type="text"  value="0" id="children" >
+                                            <span>
+                                                <button type="button" class="btn">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </span>
+                                                        <span class="road_content_pay_standard">标准</span>
+
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                            <button type="button" class="btn btn-primary">立即订购</button>
+
+                                        </form>
+                                    </div>
+                                    <!--推荐理由-->
+                                    <div class="road_content_pay_right_reason" >
+                                        <div class="row road_content_pay_right_reason_content">
+                                            <div class="col-md-3 col-sm-3 col-xs-5">推荐理由</div>
+                                            <div class="col-md-6 col-sm-6 col-xs-2"></div>
+                                            <div class="col-md-3 col-sm-3 col-xs-5 "><a href="">更多>></a></div>
+                                        </div>
+                                        <div class="row road_content_pay_right_reason_title">
+                                            <ul>景点特色
+                                                <li><i class="fa fa-star"></i>马赛马拉国家保护区位于肯尼亚西南部，与坦桑尼亚赛轮盖蒂动物保护区相连</li>
+                                                <li><i class="fa fa-star"></i>马赛马拉国家保护区位于肯尼亚西南部，与坦桑尼亚赛轮盖蒂动物保护区相连</li>
+                                                <li><i class="fa fa-star"></i>马赛马拉国家保护区位于肯尼亚西南部，与坦桑尼亚赛轮盖蒂动物保护区相连</li>
+                                                <li><i class="fa fa-star"></i>马赛马拉国家保护区位于肯尼亚西南部，与坦桑尼亚赛轮盖蒂动物保护区相连</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!--切换按钮-->
+
+                    <div class="row column travel_content_change" id="change_btn">
+                        <a href="#travel_content_products" class="travel_content_change_active col-md-1 col-sm-2">产品特色</a>
+                        <a href="#travel_content_introduction" class="col-md-1 col-sm-2">行程介绍</a>
+                        <a href="#travel_content_money" class="col-md-1 col-sm-2">费用说明</a>
+                        <a href="#travel_content_know" class="col-md-1 col-sm-2">预订须知</a>
+                        <a href="#travel_content_question" class="col-md-1 col-sm-2">咨询问答</a>
+                        <a href="#travel_content_review_all" class="col-md-1 col-sm-2">游客点评</a>
+                    </div>
+
+                    <!--产品特色-->
+                    <!--产品特色-->
+                    <div class="row clearfix " id="travel_content_products">
+                        <div class="col-md-12 column">
+                            <div class="travel_content_products_a"><span class="glyphicon glyphicon-star"></span> 产品特色</div>
+                            <div class="travel_content_products_b">
+                                <img src="img/travel_content.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--行程介绍-->
+                    <div class="row clearfix " id="travel_content_introduction">
+                        <div class="col-md-12 column">
+                            <div class="travel_content_products_a"><span class="fa fa-plane"></span> 行程介绍</div>
+                            <div class="row clearfix">
+                                <div class="col-md-12 column">
+
+                                    <div class="row clearfix inspects_content_road_a">
+
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="myScrollspy2">
+                                            <ul class="nav nav-tabs nav-stacked inspects_content_left_a" id="myNav2" >
+                                                <li class="active"><a href="#section-1">第1天</a>
+                                                    <span class="fa fa-caret-right fa-2x icon-right"></span></li>
+                                                <li><a href="#section-2">第2天</a>
+                                                    <span class="fa fa-caret-right fa-2x icon-right"></span></li>
+
+                                                <li><a href="#section-3">第3天</a>
+                                                    <span class="fa fa-caret-right fa-2x icon-right"></span></li>
+                                                <li><a href="#section-4">第4天</a>
+                                                    <span class="fa fa-caret-right fa-2x icon-right"></span></li>
+                                                <li><a href="#section-5">第5天</a>
+                                                    <span class="fa fa-caret-right fa-2x icon-right"></span></li>
+                                                <li><a href="#section-6">第6天</a>
+                                                    <span class="fa fa-caret-right fa-2x icon-right"></span></li>
+                                                <li><a href="#section-7">第7天</a>
+                                                    <span class="fa fa-caret-right fa-2x icon-right"></span></li>
+                                                <li><a href="#section-8">第8天</a>
+                                                    <span class="fa fa-caret-right fa-2x icon-right"></span></li>
+                                                <li><a href="#section-9">第9天</a>
+                                                    <span class="fa fa-caret-right fa-2x icon-right"></span></li>
+                                            </ul>
+                                        </div>
+
+
+
+                                        <div id="inspects_content_right2" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 inspects_content_right">
+
+                                            <div class="" id="section-1">
+                                                <div class="inspects_content_right_content">
+                                                    <div >
+                                                        <div class="inspects_content_right_content_a">
+                                                            <span class="fa fa-dot-circle-o"></span>
+
+                                                            <span class="inspects_content_right_day">第1天</span>
+                                                            <p class="inspects_content_left_add">
+                                                                上海 <i class="fa fa-fighter-jet"></i>阿布扎比
+                                                            </p>
+                                                            <p class="inspects_content_left_food">
+                                                                用餐：<span>X</span>
+                                                            </p>
+                                                            <p class="inspects_content_left_house">
+                                                                住宿：<span>Y</span>
+                                                            </p>
+                                                            <p class="inspects_content_left_content">提前三小时于上海浦东机场2号站楼持护照和签证，乘坐阿提哈德航空国际航班经阿布扎比转机前往内罗毕，上机后度假氛围立即蔓延，飞机舒适的设施，贴心的服务，精致的美食与丰富的娱乐节目将一路伴随。</p>
+                                                            <p class="inspects_content_left_remark">注：航班日期为2016年7月30日0点30分，集合时间为2017年7月29日21点30分</p>
+                                                            <p class="row inspects_content_left_img">
+                                                                <img src="img/sea_01.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                                                <img src="img/sea_02.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                                                <img src="img/sea_03.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                                                <img src="img/sea_04.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="" id="section-2">
+                                                <div >
+                                                    <div class="inspects_content_right_content">
+                                                        <div >
+                                                            <div class="inspects_content_right_content_a">
+                                                                <span class="fa fa-dot-circle-o"></span>
+
+                                                                <span class="inspects_content_right_day">第2天</span>
+                                                                <p class="inspects_content_left_add">
+                                                                    上海 <i class="fa fa-fighter-jet"></i>阿布扎比
+                                                                </p>
+                                                                <p class="inspects_content_left_food">
+                                                                    用餐：<span>X</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_house">
+                                                                    住宿：<span>Y</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_content">提前三小时于上海浦东机场2号站楼持护照和签证，乘坐阿提哈德航空国际航班经阿布扎比转机前往内罗毕，上机后度假氛围立即蔓延，飞机舒适的设施，贴心的服务，精致的美食与丰富的娱乐节目将一路伴随。</p>
+                                                                <!--<p class="inspects_content_left_remark">注：航班日期为2016年7月30日0点30分，集合时间为2017年7月29日21点30分</p>-->
+                                                                <!--<p class="row inspects_content_left_img">-->
+                                                                <!--<img src="img/sea_01.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_02.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_03.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_04.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--</p>-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="" id="section-3">
+                                                <div >
+                                                    <div class="inspects_content_right_content">
+                                                        <div >
+                                                            <div class="inspects_content_right_content_a">
+                                                                <span class="fa fa-dot-circle-o"></span>
+
+                                                                <span class="inspects_content_right_day">第3天</span>
+                                                                <p class="inspects_content_left_add">
+                                                                    上海 <i class="fa fa-fighter-jet"></i>阿布扎比
+                                                                </p>
+                                                                <p class="inspects_content_left_food">
+                                                                    用餐：<span>X</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_house">
+                                                                    住宿：<span>Y</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_content">提前三小时于上海浦东机场2号站楼持护照和签证，乘坐阿提哈德航空国际航班经阿布扎比转机前往内罗毕，上机后度假氛围立即蔓延，飞机舒适的设施，贴心的服务，精致的美食与丰富的娱乐节目将一路伴随。</p>
+                                                                <!--<p class="inspects_content_left_remark">注：航班日期为2016年7月30日0点30分，集合时间为2017年7月29日21点30分</p>-->
+                                                                <!--<p class="row inspects_content_left_img">-->
+                                                                <!--<img src="img/sea_01.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_02.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_03.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_04.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--</p>-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="" id="section-4">
+                                                <div >
+                                                    <div class="inspects_content_right_content">
+                                                        <div >
+                                                            <div class="inspects_content_right_content_a">
+                                                                <span class="fa fa-dot-circle-o"></span>
+
+                                                                <span class="inspects_content_right_day">第4天</span>
+                                                                <p class="inspects_content_left_add">
+                                                                    上海 <i class="fa fa-fighter-jet"></i>阿布扎比
+                                                                </p>
+                                                                <p class="inspects_content_left_food">
+                                                                    用餐：<span>X</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_house">
+                                                                    住宿：<span>Y</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_content">提前三小时于上海浦东机场2号站楼持护照和签证，乘坐阿提哈德航空国际航班经阿布扎比转机前往内罗毕，上机后度假氛围立即蔓延，飞机舒适的设施，贴心的服务，精致的美食与丰富的娱乐节目将一路伴随。</p>
+                                                                <!--<p class="inspects_content_left_remark">注：航班日期为2016年7月30日0点30分，集合时间为2017年7月29日21点30分</p>-->
+                                                                <!--<p class="row inspects_content_left_img">-->
+                                                                <!--<img src="img/sea_01.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_02.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_03.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_04.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--</p>-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="" id="section-5">
+                                                <div >
+                                                    <div class="inspects_content_right_content">
+                                                        <div >
+                                                            <div class="inspects_content_right_content_a">
+                                                                <span class="fa fa-dot-circle-o"></span>
+
+                                                                <span class="inspects_content_right_day">第5天</span>
+                                                                <p class="inspects_content_left_add">
+                                                                    上海 <i class="fa fa-fighter-jet"></i>阿布扎比
+                                                                </p>
+                                                                <p class="inspects_content_left_food">
+                                                                    用餐：<span>X</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_house">
+                                                                    住宿：<span>Y</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_content">提前三小时于上海浦东机场2号站楼持护照和签证，乘坐阿提哈德航空国际航班经阿布扎比转机前往内罗毕，上机后度假氛围立即蔓延，飞机舒适的设施，贴心的服务，精致的美食与丰富的娱乐节目将一路伴随。</p>
+                                                                <!--<p class="inspects_content_left_remark">注：航班日期为2016年7月30日0点30分，集合时间为2017年7月29日21点30分</p>-->
+                                                                <!--<p class="row inspects_content_left_img">-->
+                                                                <!--<img src="img/sea_01.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_02.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_03.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_04.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--</p>-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="" id="section-6">
+                                                <div >
+                                                    <div class="inspects_content_right_content">
+                                                        <div >
+                                                            <div class="inspects_content_right_content_a">
+                                                                <span class="fa fa-dot-circle-o"></span>
+
+                                                                <span class="inspects_content_right_day">第6天</span>
+                                                                <p class="inspects_content_left_add">
+                                                                    上海 <i class="fa fa-fighter-jet"></i>阿布扎比
+                                                                </p>
+                                                                <p class="inspects_content_left_food">
+                                                                    用餐：<span>X</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_house">
+                                                                    住宿：<span>Y</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_content">提前三小时于上海浦东机场2号站楼持护照和签证，乘坐阿提哈德航空国际航班经阿布扎比转机前往内罗毕，上机后度假氛围立即蔓延，飞机舒适的设施，贴心的服务，精致的美食与丰富的娱乐节目将一路伴随。</p>
+                                                                <!--<p class="inspects_content_left_remark">注：航班日期为2016年7月30日0点30分，集合时间为2017年7月29日21点30分</p>-->
+                                                                <!--<p class="row inspects_content_left_img">-->
+                                                                <!--<img src="img/sea_01.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_02.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_03.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_04.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--</p>-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="" id="section-7">
+                                                <div >
+                                                    <div class="inspects_content_right_content">
+                                                        <div >
+                                                            <div class="inspects_content_right_content_a">
+                                                                <span class="fa fa-dot-circle-o"></span>
+
+                                                                <span class="inspects_content_right_day">第7天</span>
+                                                                <p class="inspects_content_left_add">
+                                                                    上海 <i class="fa fa-fighter-jet"></i>阿布扎比
+                                                                </p>
+                                                                <p class="inspects_content_left_food">
+                                                                    用餐：<span>X</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_house">
+                                                                    住宿：<span>Y</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_content">提前三小时于上海浦东机场2号站楼持护照和签证，乘坐阿提哈德航空国际航班经阿布扎比转机前往内罗毕，上机后度假氛围立即蔓延，飞机舒适的设施，贴心的服务，精致的美食与丰富的娱乐节目将一路伴随。</p>
+                                                                <!--<p class="inspects_content_left_remark">注：航班日期为2016年7月30日0点30分，集合时间为2017年7月29日21点30分</p>-->
+                                                                <!--<p class="row inspects_content_left_img">-->
+                                                                <!--<img src="img/sea_01.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_02.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_03.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_04.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--</p>-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="" id="section-8">
+                                                <div >
+                                                    <div class="inspects_content_right_content">
+                                                        <div >
+                                                            <div class="inspects_content_right_content_a">
+                                                                <span class="fa fa-dot-circle-o"></span>
+
+                                                                <span class="inspects_content_right_day">第8天</span>
+                                                                <p class="inspects_content_left_add">
+                                                                    上海 <i class="fa fa-fighter-jet"></i>阿布扎比
+                                                                </p>
+                                                                <p class="inspects_content_left_food">
+                                                                    用餐：<span>X</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_house">
+                                                                    住宿：<span>Y</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_content">提前三小时于上海浦东机场2号站楼持护照和签证，乘坐阿提哈德航空国际航班经阿布扎比转机前往内罗毕，上机后度假氛围立即蔓延，飞机舒适的设施，贴心的服务，精致的美食与丰富的娱乐节目将一路伴随。</p>
+                                                                <!--<p class="inspects_content_left_remark">注：航班日期为2016年7月30日0点30分，集合时间为2017年7月29日21点30分</p>-->
+                                                                <!--<p class="row inspects_content_left_img">-->
+                                                                <!--<img src="img/sea_01.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_02.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_03.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_04.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--</p>-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="" id="section-9">
+                                                <div >
+                                                    <div class="inspects_content_right_content">
+                                                        <div >
+                                                            <div class="inspects_content_right_content_a">
+                                                                <span class="fa fa-dot-circle-o"></span>
+
+                                                                <span class="inspects_content_right_day">第9天</span>
+                                                                <p class="inspects_content_left_add">
+                                                                    上海 <i class="fa fa-fighter-jet"></i>阿布扎比
+                                                                </p>
+                                                                <p class="inspects_content_left_food">
+                                                                    用餐：<span>X</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_house">
+                                                                    住宿：<span>Y</span>
+                                                                </p>
+                                                                <p class="inspects_content_left_content">提前三小时于上海浦东机场2号站楼持护照和签证，乘坐阿提哈德航空国际航班经阿布扎比转机前往内罗毕，上机后度假氛围立即蔓延，飞机舒适的设施，贴心的服务，精致的美食与丰富的娱乐节目将一路伴随。</p>
+                                                                <!--<p class="inspects_content_left_remark">注：航班日期为2016年7月30日0点30分，集合时间为2017年7月29日21点30分</p>-->
+                                                                <!--<p class="row inspects_content_left_img">-->
+                                                                <!--<img src="img/sea_01.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_02.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_03.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--<img src="img/sea_04.jpg" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                                                                <!--</p>-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--费用说明-->
+                    <div class="row clearfix" id="travel_content_money">
+                        <div class="col-md-12 column">
+                            <div class="travel_content_products_a"><span class="fa fa-usd"></span> 费用说明</div>
+                            <span class="travel_content_money_title">报价包含:</span>
+                            <ul>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 行程所列酒店住宿</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 行程所列用餐：酒店西式午餐和西式晚餐；（不含酒水、不含单点）</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 全程车费（肯尼亚段全程使用面包车）</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 引用矿泉水</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 行程景区门票</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 国际机票及肯尼亚境内段机票</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 当地导游</li>
+                            </ul>
+                            <span class="travel_content_money_title">报价不含:</span>
+                            <ul>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 肯尼亚段的资费活动：马赛村游览、马赛马拉热气球资费项目</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 行程以外活动费用</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 行李搬小费、保管费、超重费</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 一切个人消费如：电话、互联网、付费电视、洗衣、酒水饮料</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 旅游者因违约、自身过错或自身疾病引起的人身和财产损失</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 非我社所能控制因素下引起的额外费用，如：自然灾害、罢工、境外当地政策或民俗禁忌、景点维修、因航班延误导致的一切费用等</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 签证费（55美金/人）</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 司机导游小费（5美元/客/天）</li>
+                                <li><span class="glyphicon glyphicon-hand-right"></span> 黄皮书（国际预防接种证书）的费用</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--预订须知-->
+                    <div class="row clearfix " id="travel_content_know">
+                        <div class="col-md-12 column">
+                            <div class="travel_content_products_a"><span class="fa fa-info-circle"></span> 预定须知</div>
+                            <div class="travel_content_products_c row">
+                                <div class="travel_content_know_now col-md-1 col-sm-3 col-xs-3">退改规则</div><div class="col-md-1 col-sm-3 col-xs-3">行前准备</div><div class="col-md-1 col-sm-3 col-xs-3">预订条款</div><div class="col-md-1 col-sm-3 col-xs-3">温馨提示</div>
+                            </div>
+                            <div class="travel_content_products_d">
+                                <div class="travel_content_know_show">退改规则</div><div>行前准备</div><div>预订条款</div><div>温馨提示</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--咨询问答-->
+                    <div class="row clearfix" id="travel_content_question">
+                        <div class="col-md-12 column ">
+                            <div class="row travel_content_products_a">
+                                <div class="col-md-3 col-sm-3 col-xs-5"><span class="fa fa-comment"></span> 咨询问答</div>
+                                <div class="col-md-5 col-sm-3 col-xs-0"></div>
+                                <div class="col-md-4 col-sm-6 col-xs-7">本路线由上海天翱股份有限公司提供 <a href="">我要咨询>></a></div>
+                            </div>
+                            <div class="row travel_content_question_img">
+                                <img src="img/road_content_01.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--游客点评-->
+                    <div class="row clearfix " id="travel_content_review_all">
+                        <div class="col-md-12 column">
+                            <div class="row clearfix">
+                                <div class="col-md-12 column" >
+                                    <div class="travel_content_products_a"><span class="fa fa-users"></span> 游客点评</div>
+                                </div>
+                            </div>
+                            <!--满意度 &点评-->
+                            <div class="row clearfix travel_content_review_a">
+                                <div class="col-md-2 col-sm-3 col-xs-6">
+                                    <p>满意度:</p>
+                                    <p>100%</p>
+                                </div>
+                                <div class="col-md-8 col-sm-6 col-xs-0">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-6">
+                                    <button type="button" class="btn btn-primary">我要点评</button>
+                                </div>
+                            </div>
+                            <!--点评内容-->
+                            <div class="row clearfix travel_content_review_f">
+                                <div class="col-md-1 col-lg-1 col-sm-1 col-xs-12 travel_content_review_e">
+                                    <p>孟女士</p>
+                                </div>
+                                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-12">
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column travel_content_review_b">
+                                            <div>满意度:<span>100%</span></div>
+                                            <div>
+                                                <p>导游:<span>5(满意)</span></p>
+                                                <p>交通:<span>5(满意)</span></p>
+                                                <p>酒店:<span>5(满意)</span></p>
+                                                <p>客服:<span>5(满意)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column travel_content_review_b">
+                                            <p>瑞士国土范围在史前是凯尔特人的活动
+                                                区域，凯尔特人曾经是欧洲中部的土著居民，他们的部落在公元前2世纪曾经扩展到今天的法国、比利时、意大利北部、西班牙以及莱茵河流域的广大范围，在他们的全盛时期还曾经成功地攻占了罗马城。聚居在今天瑞士国土内的是凯尔特人的海尔维第部落和雷托部落。</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row  travel_content_review_c">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 travel_content_review_d">
+                                    <p>2017-12-4</p>
+                                    <p>网上点评</p>
+                                </div>
+                            </div>
+                            <div class="row clearfix travel_content_review_f">
+                                <div class="col-md-1 col-lg-1 col-sm-1 col-xs-12 travel_content_review_e">
+                                    <p>孟女士</p>
+                                </div>
+                                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-12">
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column travel_content_review_b">
+                                            <div>满意度:<span>100%</span></div>
+                                            <div>
+                                                <p>导游:<span>5(满意)</span></p>
+                                                <p>交通:<span>5(满意)</span></p>
+                                                <p>酒店:<span>5(满意)</span></p>
+                                                <p>客服:<span>5(满意)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column travel_content_review_b">
+                                            <p>瑞士国土范围在史前是凯尔特人的活动
+                                                区域，凯尔特人曾经是欧洲中部的土著居民，他们的部落在公元前2世纪曾经扩展到今天的法国、比利时、意大利北部、西班牙以及莱茵河流域的广大范围，在他们的全盛时期还曾经成功地攻占了罗马城。聚居在今天瑞士国土内的是凯尔特人的海尔维第部落和雷托部落。</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row  travel_content_review_c">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 travel_content_review_d">
+                                    <p>2017-12-4</p>
+                                    <p>网上点评</p>
+                                </div>
+                            </div>
+                            <div class="row clearfix travel_content_review_f">
+                                <div class="col-md-1 col-lg-1 col-sm-1 col-xs-12 travel_content_review_e">
+                                    <p>孟女士</p>
+                                </div>
+                                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-12">
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column travel_content_review_b">
+                                            <div>满意度:<span>100%</span></div>
+                                            <div>
+                                                <p>导游:<span>5(满意)</span></p>
+                                                <p>交通:<span>5(满意)</span></p>
+                                                <p>酒店:<span>5(满意)</span></p>
+                                                <p>客服:<span>5(满意)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column travel_content_review_b">
+                                            <p>瑞士国土范围在史前是凯尔特人的活动
+                                                区域，凯尔特人曾经是欧洲中部的土著居民，他们的部落在公元前2世纪曾经扩展到今天的法国、比利时、意大利北部、西班牙以及莱茵河流域的广大范围，在他们的全盛时期还曾经成功地攻占了罗马城。聚居在今天瑞士国土内的是凯尔特人的海尔维第部落和雷托部落。</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row  travel_content_review_c">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 travel_content_review_d">
+                                    <p>2017-12-4</p>
+                                    <p>网上点评</p>
+                                </div>
+                            </div>
+                            <div class="row clearfix travel_content_review_f">
+                                <div class="col-md-1 col-lg-1 col-sm-1 col-xs-12 travel_content_review_e">
+                                    <p>孟女士</p>
+                                </div>
+                                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-12">
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column travel_content_review_b">
+                                            <div>满意度:<span>100%</span></div>
+                                            <div>
+                                                <p>导游:<span>5(满意)</span></p>
+                                                <p>交通:<span>5(满意)</span></p>
+                                                <p>酒店:<span>5(满意)</span></p>
+                                                <p>客服:<span>5(满意)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column travel_content_review_b">
+                                            <p>瑞士国土范围在史前是凯尔特人的活动
+                                                区域，凯尔特人曾经是欧洲中部的土著居民，他们的部落在公元前2世纪曾经扩展到今天的法国、比利时、意大利北部、西班牙以及莱茵河流域的广大范围，在他们的全盛时期还曾经成功地攻占了罗马城。聚居在今天瑞士国土内的是凯尔特人的海尔维第部落和雷托部落。</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row  travel_content_review_c">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                        <img src="img/road_01.jpg" class="col-md-3 col-sm-6 col-xs-12">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 travel_content_review_d">
+                                    <p>2017-12-4</p>
+                                    <p>网上点评</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--分页-->
+                        <div class="row-fluid con_paging">
+                            <div class="col-md-6 col-md-offset-3 col-xs-12">
+                                <ul class="pagination">
+                                    <li><a href="#">首页</a></li>
+                                    <li><a href="#">上一页</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">下一页</a></li>
+                                    <li><a href="#">末页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="row clearfix footer">
+
+        <div class="col-md-8 col-md-offset-2">
+            <div class="row clearfix">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 footer-left">
+                    <table >
+                        <tr>
+                            <td>地址:</td>
+                            <td>河北省石家庄市裕华区富强大街131号北大科技园12层1204</td>
+                        </tr>
+                        <tr>
+                            <td>电话:</td>
+                            <td>0311-66501030</td>
+                        </tr>
+                        <tr>
+                            <td>邮箱:</td>
+                            <td>udutech@udutech.com</td>
+                        </tr>
+                    </table>
+                    <img src="img/qrcode.jpg" class="qrcode">
+                    <img src="img/qrcode.jpg" class="qrcode">
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 footer-right">
+                    <p>合作伙伴</p>
+                    <a href="" class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><img src="img/footer_1.jpg"></a>
+                    <a href="" class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><img src="img/footer_2.jpg"></a>
+                    <a href="" class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><img src="img/footer_3.jpg"></a>
+                    <a href="" class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><img src="img/footer_4.jpg"></a>
+                    <a href="" class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><img src="img/footer_5.jpg"></a>
+                    <a href="" class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><img src="img/footer_6.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--日历-->
+<script src="js/canlendar/fullcalendar.min.js"></script>
+<script src="js/canlendar/fullcalendar-custom.js"></script>
+<script src="js/canlendar/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/commen.js"></script>
+<script>
+
+//          附加导航
+$(document).ready(function () {
+    $("#myNav2").affix({
+        offset: {
+//                            top: 825,
+            top: function(){
+//
+                return(this.top = $("#road_top").height() + $("#my_banner").height() + $("#my_nav").height() + $("#road_broad").height() + $("#road_pay").height() + $("#change_btn").height()+ $("#travel_content_products").height()+ 100 )
+            },
+            bottom: function () {
+//                                console.log(1,$('#bottom_affix').outerHeight(true));
+                return (this.bottom = $(document).height()-$('#travel_content_money').offset().top+ 20)
+            }
+        }
+    });
+});
+</script>
+</body>
+</html>

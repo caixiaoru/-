@@ -1,0 +1,358 @@
+a:hover,a:visited,a:active,a:link{text-decoration: none}
+
+/*首页*/
+ /*顶部*/
+.top{background-color: rgb(20,112,159);height:60px}
+.top_content{margin-top:15px}
+.top_content div:last-child{color:white;float:right;}
+.top_content div:first-child{float:left}
+
+/*导航栏*/
+.navbar-default{background-color: white !important;}
+.navbar{border:none !important;}
+.navbar-nav{margin-top:0 !important;}
+.container-fluid>.navbar-collapse{margin-top:20px !important;}
+.navbar{min-height:60px !important;}
+.logo img{width:210px;height:55px}
+.navbar-collapse ul{margin-top:20px}
+.navbar-collapse ul li a{padding:8px 15px !important;}
+.banner_top div{padding-left:0;padding-right:0;}
+.banner_top img{width:100%;height:220px}
+.active_nav{background-color:rgb(20,112,159) !important;}
+.active_nav a{color:white !important;}
+/*底部*/
+.footer{background-color: rgb(20,112,159);color:white}
+.footer-left{margin:20px 0 20px 0}
+.footer-left table tr{line-height: 25px}
+.footer-left img{margin:10px 10px 0 0}
+.footer-right{text-align: center;margin:40px 0 20px 0}
+.footer-right img{width:100%}
+.footer-right a{padding:5px !important;}
+
+/*我们的优势*/
+.ascendancy{margin-top:20px}
+.ascendancy_title{font-size:18px;border-bottom: 1px solid rgb(64,139,177)}
+.ascendancy_title i{margin-right:10px}
+.ascendancy_title img{width:40px;height:40px}
+.ascendancy_content{text-align: center;margin-top:15px;}
+/*.ascendancy_content_a+.ascendancy_content_a{border-left:1px solid black}*/
+.ascendancy_content div{position: relative}
+.ascendancy_04{position: absolute;right:0;top:30px;height:90px}
+.ascendancy_content p:nth-of-type(1){padding-top: 10px}
+.ascendancy_content p:nth-of-type(2){padding-left: 5px;padding-right:5px}
+
+/*名企参观*/
+.company{margin-top:20px}
+.company_content{margin-top: 15px}
+.company img{width:100%}
+.company_title{font-size:18px;border-bottom: 1px solid rgb(64,139,177);position: relative}
+.company_title img{width:40px !important;height:40px !important;}
+.company_title p{vertical-align: middle}
+.company_title_more{position: absolute;bottom:10px;right:0;}
+.company_title_more a{font-size: 14px;float:right;}
+.company_content_img div{text-align: center;font-size:12px}
+.company_content_img_1{padding-left:10px !important;padding-right:10px !important;}
+.company_content_img div div{padding-right:0 !important;background-color: rgb(246,246,246);}
+.company_content_img p{padding-top:5px;padding-bottom: 5px;}
+.company_content_img a{color:black}
+@media (max-width: 768px) {
+    .company_content_img_1{margin-bottom:10px;}
+}
+
+    /*行业考察*/
+.industry{margin-top:20px}
+.industry img{width:100%}
+.company_title img{width:40px;height:40px}
+
+/*会展中心*/
+.center_sea{margin-top:20px}
+.center_sea_content a{color:black}
+.center_sea img{width:100%}
+.center_sea_content div p:nth-of-type(1){font-weight:600;padding-top:10px;margin-bottom: 5px;margin-left:5px}
+.center_sea_content div p:nth-of-type(2),.center_sea_content div p:nth-of-type(3){font-size:12px;margin-left:5px;margin-bottom:0;color:gray}
+.center_sea_content div div{background-color: rgb(246,246,246);margin-top:15px;padding-bottom:10px}
+.center_sea_content_a{padding-left:5px;padding-right:5px}
+.center_sea_banner{padding-left:5px;padding-right:5px;margin-top:20px;position: relative}
+.center_sea_banner span{position: absolute;top:35%;right:10%}
+.center_sea_banner span a{color:white;font-size:12px;}
+.center_sea_content_b{padding-left:5px;padding-right:5px}
+.center_sea_content_b div p:nth-of-type(1){text-align: center}
+
+/*特色服务*/
+.service{margin-top:20px}
+.service_content{margin-top:15px}
+.service_content_a img:nth-of-type(1){width:100%}
+.service_content_a img:nth-of-type(2){height:40px}
+.service_content_b{background-color: rgb(246,246,246);padding:30px 0;text-align: center}
+.service_content .service_content_b:first-child{padding-right:8px !important;}
+.service_content .service_content_b:last-child{padding-left:8px !important;}
+.service_content_a a{color:black}
+@media (max-width: 768px) {
+.service_content_a div:nth-of-type(4) img:nth-of-type(2){display: none}}
+
+/*<!--热门行程&&合作名校-->*/
+.travel_b{margin-top:15px}
+.travel_content{background-image: url("../img/travel.jpg");background-size:cover;color:white;padding:0}
+.travel_content a{color:white}
+.travel_content_content {background-color: rgba(97,108,119,0.5);width:60%;padding-bottom:35px}
+.travel_title{padding:30px 0 20px 25px;font-size:15px;}
+.travel_content_content ul p{font-size:12px !important;margin-bottom:5px;}
+.travel_content_content ul li{margin-bottom:15px}
+.school_content{margin-top:15px;}
+.school_content div{padding:0 !important;}
+.school_content img{width:100%}
+
+/*您的需求*/
+.need{margin-top:20px;}
+.need form div{margin-top:15px}
+.need form span{background-color: white !important;}
+.need_button{width:100px;height:50px;line-height: 50px;}
+.btn_a{background-color:rgb(185,29,49);color:white;margin:20px auto 50px auto;display: block}
+.btn_a:hover,.btn:active,.btn:visited{color:white}
+#a .input-group{float:right;padding-left:5px;padding-right:5px;}
+.need_else{margin-bottom:20px !important;}
+
+
+
+/*内容页*/
+ /*名企参观内容页*/
+.company_content_name{margin-top:40px;border-bottom: 1px solid rgb(64,139,177) ;padding-bottom: 5px;}
+.company_content_name div p:nth-of-type(1){font-size:15px;font-weight:600;}
+.company_content_name div p:nth-of-type(2),.company_content_name div p:nth-of-type(3){margin-bottom:5px !important;font-size:12px;}
+.company_content_intro{margin-top:20px;}
+.company_content_intro table tr:nth-of-type(odd) td{color:rgb(20,112,159);padding-bottom:10px;}
+.company_content_intro table tr:nth-of-type(even) td{font-size:12px;padding-bottom:30px;}
+.company_content_intro p{text-indent: 2em;line-height: 20px;}
+.company_content_intro table tr:nth-of-type(4) td{text-align: center;padding-top:5px;}
+.company_content_intro table tr:nth-of-type(4) td img{width:70%}
+.company_content_intro span{color:rgb(20,112,159)}
+.company_content_road img{width:100%}
+.company_content_road a{color:black}
+.company_content_road div div div{text-align: center}
+.company_content_road_title{color:rgb(20,112,159)}
+
+/*合作院校*/
+.sea_content_c td{text-align: left !important;}
+.sea_content_bottom{margin-bottom:30px;}
+.sea_content_bottom p{color:rgb(20,112,159)}
+@media (max-width: 768px) {
+  .sea_content_bottom img{margin-bottom:10px;}
+}
+
+
+/*会展中心*/
+.exhibition_content_time{margin-top:20px;border:1px solid rgb(20,112,159)}
+.exhibition_content_time img{width:100%}
+.exhibition_content_time_content p{font-size:12px;}
+.exhibition_content_time_content p:nth-of-type(1){font-size:15px;padding-top:10px;padding-bottom:20px;}
+.exhibition_content_time_content button{border:0 !important;margin-right:30px;margin-top:20px;background-color: rgb(174,30,48)}
+.exhibition_content_time div{padding:15px;}
+.exhibition_content_content{margin-top:30px;}
+.exhibition_content_tab{overflow: hidden;padding-left:0;}
+.exhibition_content_tab div{float:left;padding:8px 15px;cursor: pointer;}
+.exhibition_content_tab_active{background-color: rgb(20,112,159);color:white}
+.exhibition_content_tab_a{border:1px solid rgb(20,112,159);margin-bottom:25px;}
+.exhibition_content_tab_info_e{margin-top:20px;border-bottom: 1px solid rgb(20,112,159);margin-left:10px;margin-right:10px;}
+.exhibition_content_tab_info div div p{margin-bottom:5px;padding:0;line-height: 23px;}
+.exhibition_content_tab_info_bottom div{padding:30px;padding-top:0 !important;}
+.exhibition_content_tab_info_bottom p{line-height: 20px;}
+.exhibition_content_tab_td td{padding-top:5px !important;}
+.exhibition_content_tab_a>div{display: none}
+.exhibition_content_tab_show{display: block !important;}
+.exhibition_content_tab_info_f{margin-top:20px;border-bottom: 1px solid rgb(20,112,159);margin-left:10px;margin-right:10px;color:rgb(20,112,159);font-size:15px;padding-bottom:10px;}
+.exhibition_content_road div p{text-indent: 0 !important;}
+.exhibition_content_road div p:nth-of-type(1){color:rgb(20,112,159);padding-bottom:5px;}
+.exhibition_content_road div p:nth-of-type(2){font-size:13px;}
+.exhibition_content_road div p:nth-of-type(3){font-size:12px;color:gray;}
+.exhibition_content_road div p:nth-of-type(3) span{margin-right:20px;margin-left:5px;}
+.exhibition_content_road div p:nth-of-type(4) img{width:40%;margin-right: 10px;}
+@media (max-width: 768px) {
+    .exhibition_content_road div p:nth-of-type(4) img{width:100%;margin-bottom:10px;}
+}
+.btn_c{margin-top:20px;}
+.exhibition_content_time_end{padding:0 !important;position: relative;margin-top:30px;text-align: center;}
+.exhibition_content_time_end img{width:80%;}
+.exhibition_content_time_end p span:nth-of-type(1){color:rgb(20,112,159);font-size:45px;}
+.exhibition_content_time_end p:nth-of-type(1){margin-top:-40px;}
+.content_exhition_ol li{margin-top:8px;}
+/*行业考察内容页*/
+
+.inspects_content_left_a{width:100px;border: none;}
+.inspects_content_left_a li{margin-bottom:15px;}
+.inspects_content_left_a li a{border-radius: 0;padding:5px 10px !important;text-align: center;color:gray;background-color: rgb(240,240,240);}
+ul.nav-tabs.affix{top:30px !important;}
+ul.nav-tabs.affix-top {position: relative;top: 30px;}
+ul.nav-tabs.affix-bottom {position: relative;top: 30px;}
+.fa-caret-right{position: absolute;top:10%;right:-9px}
+@media (max-width: 768px) {
+    #myScrollspy{display: none !important;}
+}
+#bottom_affix img{width:100%}
+#bottom_affix a{color:black}
+#bottom_affix div div div p{margin-top:10px;}
+.company_content_div div p{margin-top:10px;}
+.inspects_content_right>div:last-child .inspects_content_right_content{padding-bottom:40px;}
+.inspects_content_right_content{border-left:1px solid #0088cc}
+.inspects_content_right_content_a{position: relative;padding-top:20px;padding-left:20px;}
+.inspects_content_right_content_a span{position: absolute;}
+.inspects_content_right_day{left:-60px;text-align: right}
+.fa-dot-circle-o{color:#0088cc;left:-7px;}
+.inspects_content_right_address{color:rgb(20,112,159);font-size:15px;}
+.inspects_content_right_thing{margin-left:10px;font-size:12px;}
+.inspects_content_right_thing2{font-size:12px;}
+.inspects_content_right_thing2 p{padding-bottom:15px}
+.inspects_content_right_thing2 span{position: static !important;display: block;margin-top: 5px;}
+.inspects_content_road_title{color:rgb(20,112,159);border-bottom:1px solid rgb(20,112,159);padding-bottom:10px;}
+.inspects_content_right_school{margin-top:30px}
+.inspects_content_right_school_title{color:rgb(20,112,159)}
+.inspects_content_need{border:none !important;margin-top:10px;}
+.inspects_content_need p{color:rgb(20,112,159);font-size:14px;}
+.inspects_content_need_form>div{border:1px solid rgb(20,112,159);margin-bottom:20px;}
+.inspects_content_road_a{margin-top:20px;}
+#section-1{margin-top:30px;}
+#section-1,#section-2,#section-3,#section-4,#section-5,#section-6,#section-7,#section-8,#section-9{margin-bottom:-10px;}
+#myScrollspy ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+    color: #fff;
+    background: rgb(20,112,159);
+    border:none !important;
+    margin-right:0 !important;
+}
+#myScrollspy2 ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+    color: #fff;
+    background: rgb(20,112,159);
+    border:none !important;
+    margin-right:0 !important;
+}
+.icon-right{color:rgb(20,112,159);display: none}
+#myScrollspy ul.nav-tabs li.active .icon-right{display: inline}
+#myScrollspy2 ul.nav-tabs li.active .icon-right{display: inline}
+/*热门行程内容页*/
+.road_content_pay{}
+.road_content_pay_body1{padding-bottom:20px;}
+.road_content_pay_broad{padding-top:15px;padding-left:0 !important;}
+.road_content_pay_broad ul{overflow: hidden;padding-left:0 !important;}
+.road_content_pay_broad ul li{list-style: none;float:left}
+
+/*.road_content_pay_con{padding-right: 0 !important;}*/
+.road_content_pay_left_imgLG img{width:100%}
+.road_content_pay_left_imgSM div{margin-top:10px;padding:0 5px;}
+.road_content_pay_left_imgSM img{width:100%}
+.road_content_pay_title{margin-top:20px}
+.road_content_pay_title p:nth-of-type(1){font-size:19px;font-weight:600}
+.road_content_pay_title p:nth-of-type(2) span:nth-of-type(1){color:gray;font-size:12px;}
+.road_content_pay_title p:nth-of-type(2) span:nth-of-type(2){color:rgb(20,112,159);font-size:12px;cursor: pointer}
+.road_content_pay_left_date{margin-top:20px;border:1px solid rgba(174, 174, 174, 0.76);margin-left:0;margin-right:0;padding:15px 0 15px 0}
+.fc-header-right{display: none}
+.fc-header-left {
+    width: 25%;
+    float:right;
+    margin-right:10%;
+}
+
+.fc-header-center {
+    text-align: center;
+    font-size:16px !important;
+    float:left;
+
+}
+.fc-day>div{min-height:47px !important;}
+.fc-button{padding:0 2px !important;}
+
+.fc-header-title h2{font-size:18px !important;font-weight:600;margin-top:8%;margin-left:10%}
+.fc td{vertical-align: middle}
+.fc-event-inner{background-color: white !important;color:rgb(230,31,72);font-weight:900 !important;}
+@media (max-width: 768px) {
+    .fc-event-title{font-size:12px !important; }
+    .fc-event-inner{background-color: white !important;color:rgb(230,31,72);font-weight:600 !important;font-size:12px !important;}
+}
+.fc-ltr .fc-event-hori.fc-event-end, .fc-rtl .fc-event-hori.fc-event-start{border:none !important;margin-top:5px;}
+.road_content_pay_right table{width:100%;}
+.road_content_pay_right_table01{margin-top:80px;}
+.road_content_pay_right_table01 tr td:nth-of-type(2){padding-left:0 !important;}
+.road_content_pay_right_table01 tr:nth-of-type(4) td:nth-of-type(2) p{padding-left:0 !important;}
+.road_content_pay_right table tr {line-height: 38px;}
+.road_content_pay_right table tr td:nth-of-type(1){color:gray;font-size:13px;}
+.road_content_pay_right table tr:nth-of-type(1) td:nth-of-type(2){color:rgb(230,31,72);font-size:13px;}
+.road_content_pay_right table tr:nth-of-type(1) td:nth-of-type(2) span:nth-of-type(1){font-size:20px;font-weight:600;}
+.road_content_pay_right table tr:nth-of-type(1) td:nth-of-type(2) span:nth-of-type(2){margin-left:20px;}
+.road_content_pay_right table tr:nth-of-type(2) td:nth-of-type(2){color:rgb(20,112,159)}
+.road_content_pay_right table tr:nth-of-type(3) td{color:gray}
+.road_content_pay_right table tr:nth-of-type(3) td span{color:rgb(230,31,72);font-size:20px;font-weight:600}
+.pay_style{font-size:10px;}
+.pay_style p{padding-right:0;margin-bottom:0 !important;}
+.road_content_pay_right_top{background-color: rgb(240,240,240);margin-top:30px;padding:20px;}
+.road_content_pay_right_top .btn-primary{padding-left:25px;padding-right:25px;margin:15px 0 0 10px;}
+.road_content_pay_right_top table tr td:nth-of-type(2){color:black !important;padding-right:0 !important;padding-left: 0 !important;}
+.road_content_pay_right_top table tr:nth-of-type(2) .btn{padding:0 4px !important;background-color: white !important;border-radius: 0 !important;}
+.road_content_pay_right_top table tr:nth-of-type(2)  input{height:20px;width:20px;text-align: center}
+.road_content_pay_right_top table tr:nth-of-type(2) i{color:gray}
+.road_content_pay_standard{color:rgb(230,31,72)}
+.icon-plus{margin-right:10px;}
+.road_content_pay_right_reason{margin-top:30px;}
+.road_content_pay_right_reason_content{border-bottom: 1px solid gray;width:100%;margin-left:0;}
+.road_content_pay_right_reason_content div:nth-of-type(1){color:rgb(20,143,201);font-weight:600;font-size:15px;}
+.road_content_pay_right_reason_content div:nth-of-type(2){font-size:12px;}
+.road_content_pay_right_reason ul{margin-top:15px;}
+.road_content_pay_right_reason ul li{list-style: none !important;line-height:25px;font-size:13px;}
+.road_content_pay_right_reason ul li:nth-of-type(1){margin-top:10px;}
+.road_content_pay_right_reason_title{width:100%}
+.travel_content_change{padding-left:0 !important;margin-top:30px;}
+.travel_content_change{overflow: hidden;border-bottom:none}
+.travel_content_change a{padding-left:5px !important;padding-right:5px !important;border-left:1px solid rgb(20,112,159);display: block;height:30px;background-color: rgb(20,143,201);color:white;text-align: center;line-height: 30px;box-shadow: 0 0 1px rgb(20,143,201)}
+@media (max-width: 767px) {
+    .travel_content_change a{display: none;}
+}
+
+.travel_content_change_active{background-color: white !important;color:rgb(20,143,201) !important;}
+.travel_content_products_a{border-bottom: 1px solid #b5b5b5;margin-top:20px;font-size:15px}
+.travel_content_products_a span{color:rgb(20,112,159)}
+.travel_content_products_b{margin-top:20px;padding-bottom: 20px}
+.travel_content_products_b img{width:100%}
+#travel_content_products{background-color: white;}
+#travel_content_money,#travel_content_know{background-color: white;margin-top:20px;padding-bottom:20px;}
+#travel_content_money ul li{list-style-type: none; margin-left:30px;margin-top:5px}
+.travel_content_money_title{font-weight:600;margin:15px 0 5px 35px;display: block}
+.travel_content_know_now{color: rgb(20,143,201);border-bottom:2px solid rgb(20,143,201)}
+.travel_content_products_c{margin:10px 0;border-bottom: 1px solid lightgray}
+.travel_content_products_c div{padding:0 5px !important;text-align: center}
+.travel_content_products_d div{display: none}
+.travel_content_know_show{display: block !important;}
+#travel_content_question{background-color: white;margin-top:20px}
+#travel_content_review_all{background-color: white;margin-top:20px;margin-bottom:40px;}
+.travel_content_review_a{background-color: rgb(198,230,248);height:60px;margin:20px }
+.travel_content_review_a div:nth-of-type(1){background-color: rgb(20,143,201);height:60px}
+.travel_content_review_a div:nth-of-type(1) p:nth-of-type(1){color:white;margin:5px 0 0 10px}
+.travel_content_review_a div:nth-of-type(1) p:nth-of-type(2){color:white;font-weight:700;font-size:25px;margin-left:28px}
+.travel_content_review_a div:nth-of-type(3) {margin-top:15px}
+.travel_content_review_b{overflow: hidden}
+.travel_content_review_b div:nth-of-type(1){color:rgb(20,143,201);float:left;background-color: rgb(246,245,245);margin-right:15px}
+.travel_content_review_b div:nth-of-type(2){float:left;background-color: rgb(246,245,245);margin-bottom: 20px}
+.travel_content_review_b div:nth-of-type(2) p{display: inline-block;margin:0 10px}
+.travel_content_review_c{margin-top:20px}
+
+@media (max-width: 767px) {
+    .travel_content_review_c img{margin-bottom:10px;}
+    #myScrollspy2{visibility: hidden}
+}
+.travel_content_review_d{color:gray;text-align: center}
+.travel_content_review_e{text-align: right}
+.travel_content_review_f{margin-top:15px;border-bottom: 1px solid #c8c8c8;padding-bottom: 10px}
+.page ul{margin-left:35%}
+#travel_content_introduction{background-color: white;margin-top:20px;padding-top:10px;padding-bottom:30px;}
+.inspects_content_left_add i{color:rgb(20,112,159);margin:0 10px;}
+.inspects_content_left_content{font-size:13px;color:gray;margin-top:20px;}
+.inspects_content_left_remark{color:rgb(20,112,159)}
+.inspects_content_left_food{margin-top:20px;}
+.travel_content_question_img img{width:100%}
+@media (max-width: 767px) {
+    .fc-event-inner{font-weight:400 !important;}
+}
+#road_pay,#travel_content_products,#travel_content_introduction,#travel_content_money,#travel_content_know,#travel_content_question,#travel_content_review_all{box-shadow: 0 0 5px #dfdfdf}
+/*分页*/
+.con_paging{
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
+.pagination a{
+    margin-right: 5px;
+}
