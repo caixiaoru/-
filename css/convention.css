@@ -55,19 +55,19 @@
     width: 100%;
 }
 .con_top{
-    margin: 40px 0 25px 0;
+    margin: 40px 0 0 0;
     padding-left: 0;
     padding-right: 0;
 }
 .con_top1{
     margin: 40px 0 15px 0;
-    padding-left: 18px;
+    padding-left: 0;
     padding-right: 0;
 }
 /*<h4>*/
 .con_middle_r_top{
     float: right;
-    font-size: 14px;
+    font-size: 12px;
 }
 .con_middle_r{
     margin-bottom: 10px;
@@ -119,6 +119,14 @@
 }
 .con_input{
     margin-bottom: 10px;
+}
+.con_control div{
+    display: inline-block;
+}
+.con_active8{
+    background-color: #af1f30;
+    color: white;
+    padding: 0 6px;
 }
 .con_button-style{
     width: 100%;
@@ -172,6 +180,10 @@
 /*����ι�*/
 .vis_border{
     border-bottom: 1px #cdd5e3 solid;
+    margin: 0;
+}
+.vis_top1{
+    padding: 0 15px;
 }
 /*����ι�*/
 
@@ -185,6 +197,9 @@
 }
 .hot_middle_r span{
     color: #14709f;
+}
+.hot_top1{
+    padding: 0 18px;
 }
 /*��������*/
 .about_middle{
@@ -417,6 +432,7 @@
 .con_border{
     /*padding-top: 10px;*/
     border-bottom: 1px #cdd5e3 solid;
+    margin: 0;
 }
 /*��???*/
 .con_paging{

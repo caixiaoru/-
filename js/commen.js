@@ -34,8 +34,8 @@ $(function(){
         $(this).addClass("con_active").siblings().removeClass("con_active");
     });
 
-    //超链接
-    $("a").attr("target","_blank");
+    ////超链接
+    //$("a").attr("target","_blank");
 
     //禁用日历的点击事件
     $('.fc-day').unbind("mousedown");
@@ -45,7 +45,14 @@ $(function(){
     $(".exhibition_content_tab div").click(function(){
         $(this).addClass("exhibition_content_tab_active").siblings().removeClass("exhibition_content_tab_active");
         $('.exhibition_content_tab_a>div').eq($(this).index()).addClass('exhibition_content_tab_show').siblings().removeClass('exhibition_content_tab_show');
-    })
+    });
+//    展会类型
+    $(".exhibition_content_style div").click(function(){
+        //console.log(1234567);
+        $(this).addClass("exhibition_content_style_active").siblings().removeClass("exhibition_content_style_active");
+    });
+
+
 });
 
 

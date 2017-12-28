@@ -10,11 +10,11 @@ a:hover,a:visited,a:active,a:link{text-decoration: none}
 /*导航栏*/
 .navbar-default{background-color: white !important;}
 .navbar{border:none !important;}
-.navbar-nav{margin-top:0 !important;}
+/*.navbar-nav{margin-top:0 !important;}*/
 .container-fluid>.navbar-collapse{margin-top:20px !important;}
 .navbar{min-height:60px !important;}
 .logo img{width:210px;height:55px}
-.navbar-collapse ul{margin-top:20px}
+
 .navbar-collapse ul li a{padding:8px 15px !important;}
 .banner_top div{padding-left:0;padding-right:0;}
 .banner_top img{width:100%;height:220px}
@@ -55,10 +55,10 @@ a:hover,a:visited,a:active,a:link{text-decoration: none}
 .company_content_img div div{padding-right:0 !important;background-color: rgb(246,246,246);}
 .company_content_img p{padding-top:5px;padding-bottom: 5px;}
 .company_content_img a{color:black}
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .company_content_img_1{margin-bottom:10px;}
 }
-
+.company_content_img>div{padding-left:5px !important;padding-right:5px !important;}
     /*行业考察*/
 .industry{margin-top:20px}
 .industry img{width:100%}
@@ -68,8 +68,8 @@ a:hover,a:visited,a:active,a:link{text-decoration: none}
 .center_sea{margin-top:20px}
 .center_sea_content a{color:black}
 .center_sea img{width:100%}
-.center_sea_content div p:nth-of-type(1){font-weight:600;padding-top:10px;margin-bottom: 5px;margin-left:5px}
-.center_sea_content div p:nth-of-type(2),.center_sea_content div p:nth-of-type(3){font-size:12px;margin-left:5px;margin-bottom:0;color:gray}
+.center_sea_content div p:nth-of-type(1){font-weight:600;padding-top:10px;margin-bottom: 5px;margin-left:5px;font-size:13px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.center_sea_content div p:nth-of-type(2),.center_sea_content div p:nth-of-type(3){font-size:12px;margin-left:5px;margin-bottom:0;color:gray;}
 .center_sea_content div div{background-color: rgb(246,246,246);margin-top:15px;padding-bottom:10px}
 .center_sea_content_a{padding-left:5px;padding-right:5px}
 .center_sea_banner{padding-left:5px;padding-right:5px;margin-top:20px;position: relative}
@@ -87,20 +87,44 @@ a:hover,a:visited,a:active,a:link{text-decoration: none}
 .service_content .service_content_b:first-child{padding-right:8px !important;}
 .service_content .service_content_b:last-child{padding-left:8px !important;}
 .service_content_a a{color:black}
-@media (max-width: 768px) {
-.service_content_a div:nth-of-type(4) img:nth-of-type(2){display: none}}
-
+@media (max-width: 767px) {
+.service_content_a div:nth-of-type(4) img:nth-of-type(2){display: none}
+    .index_service div:nth-of-type(4) img:nth-of-type(2){display: none}
+    .center_sea>div:nth-of-type(2){margin-top:15px;}
+    .travel_title{padding:10px 0 0 25px !important;}
+}
+@media (max-width: 1024px){
+    .center_school{margin-top:15px;}
+}
+@media (max-width: 1282px){
+    .navbar-nav{margin-top:15px;}
+}
+@media (min-width: 1283px){
+    .navbar-nav{margin-top:0;}
+}
+@media (min-width:768px) and (max-width:1024px){
+    .company_content_img_1{margin-bottom:10px;}
+    /*.center_school{margin-top:27px;}*/
+}
+.index_service div img:nth-of-type(1){width:100%;margin-top:15px;}
+.index_service{background-color: rgb(246,246,246)}
+.index_service div{position: relative;text-align: center}
+.index_service div img:nth-of-type(2){position: absolute;right:0;top:10%}
 /*<!--热门行程&&合作名校-->*/
 .travel_b{margin-top:15px}
-.travel_content{background-image: url("../img/travel.jpg");background-size:cover;color:white;padding:0}
+.travel_content{color:white;padding:0;position: relative}
+.travel_content img{width:100%}
 .travel_content a{color:white}
-.travel_content_content {background-color: rgba(97,108,119,0.5);width:60%;padding-bottom:35px}
+.travel_content_content {background-color: rgba(97,108,119,0.5);width:60%;}
+
 .travel_title{padding:30px 0 20px 25px;font-size:15px;}
+
 .travel_content_content ul p{font-size:12px !important;margin-bottom:5px;}
 .travel_content_content ul li{margin-bottom:15px}
 .school_content{margin-top:15px;}
 .school_content div{padding:0 !important;}
 .school_content img{width:100%}
+.travel_content_topdiv{position: absolute;top:0;left:0;}
 
 /*您的需求*/
 .need{margin-top:20px;}
@@ -135,7 +159,7 @@ a:hover,a:visited,a:active,a:link{text-decoration: none}
 .sea_content_c td{text-align: left !important;}
 .sea_content_bottom{margin-bottom:30px;}
 .sea_content_bottom p{color:rgb(20,112,159)}
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .sea_content_bottom img{margin-bottom:10px;}
 }
 
@@ -166,8 +190,14 @@ a:hover,a:visited,a:active,a:link{text-decoration: none}
 .exhibition_content_road div p:nth-of-type(3){font-size:12px;color:gray;}
 .exhibition_content_road div p:nth-of-type(3) span{margin-right:20px;margin-left:5px;}
 .exhibition_content_road div p:nth-of-type(4) img{width:40%;margin-right: 10px;}
-@media (max-width: 768px) {
+.exhibition_content_road div p img{margin-bottom:15px;}
+@media (max-width: 767px) {
     .exhibition_content_road div p:nth-of-type(4) img{width:100%;margin-bottom:10px;}
+}
+.exhibition_content_time_img img{width:100%;text-align: center;}
+.exhibition_content_style{margin-top:0 !important;}
+.exhibition_content_style div{display: inline-block;margin-top:0!important;margin-right:15px;cursor: pointer;padding:0 10px;}
+.exhibition_content_style_active{background-color: #c9302c;color:white;
 }
 .btn_c{margin-top:20px;}
 .exhibition_content_time_end{padding:0 !important;position: relative;margin-top:30px;text-align: center;}
@@ -184,14 +214,15 @@ ul.nav-tabs.affix{top:30px !important;}
 ul.nav-tabs.affix-top {position: relative;top: 30px;}
 ul.nav-tabs.affix-bottom {position: relative;top: 30px;}
 .fa-caret-right{position: absolute;top:10%;right:-9px}
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #myScrollspy{display: none !important;}
+    .top_phone{display: none}
 }
 #bottom_affix img{width:100%}
 #bottom_affix a{color:black}
 #bottom_affix div div div p{margin-top:10px;}
 .company_content_div div p{margin-top:10px;}
-.inspects_content_right>div:last-child .inspects_content_right_content{padding-bottom:40px;}
+.inspects_content_right>div:last-child .inspects_content_right_content{padding-bottom:30px;}
 .inspects_content_right_content{border-left:1px solid #0088cc}
 .inspects_content_right_content_a{position: relative;padding-top:20px;padding-left:20px;}
 .inspects_content_right_content_a span{position: absolute;}
@@ -261,7 +292,7 @@ ul.nav-tabs.affix-bottom {position: relative;top: 30px;}
 .fc-header-title h2{font-size:18px !important;font-weight:600;margin-top:8%;margin-left:10%}
 .fc td{vertical-align: middle}
 .fc-event-inner{background-color: white !important;color:rgb(230,31,72);font-weight:900 !important;}
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .fc-event-title{font-size:12px !important; }
     .fc-event-inner{background-color: white !important;color:rgb(230,31,72);font-weight:600 !important;font-size:12px !important;}
 }
@@ -332,8 +363,9 @@ ul.nav-tabs.affix-bottom {position: relative;top: 30px;}
 
 @media (max-width: 767px) {
     .travel_content_review_c img{margin-bottom:10px;}
-    #myScrollspy2{visibility: hidden}
+    #myScrollspy2{display: none}
 }
+.inspects_content_left_img img{margin-bottom:10px;}
 .travel_content_review_d{color:gray;text-align: center}
 .travel_content_review_e{text-align: right}
 .travel_content_review_f{margin-top:15px;border-bottom: 1px solid #c8c8c8;padding-bottom: 10px}

@@ -30,4 +30,7 @@ $(function(){
     $(".con_body-close_four li").click(function(){
         $(this).addClass("con_active").siblings().removeClass("con_active");
     })
+    $(".con_control div").click(function(){
+        $(this).addClass("con_active8").siblings().removeClass("con_active8");
+    })
 })
