@@ -1,4 +1,73 @@
 a:hover,a:visited,a:active,a:link{text-decoration: none}
+/*我们的优势*/
+.ascendancy_title{
+    position: relative;
+}
+.ascendancy_content img{
+    width: 38%;
+    height: 38%;
+}
+.index_a p:nth-of-type(1){
+    color: #6d6f72;
+    font-weight: 600;
+}
+.index_aa p:nth-of-type(1){
+    color: #176c97;
+    font-weight: 600;
+}
+.index_aaa p:nth-of-type(1){
+    color: #deab2b;
+    font-weight: 600;
+}
+.ascendancy_content_vertical_right{
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid #14709f;
+    border-left: 1px solid #14709f;
+}
+.ascendancy_content_border_lef{
+    border-bottom: 1px solid #14709f;
+}
+.ascendancy_content_border_right{
+    border-bottom: 1px solid #14709f;
+}
+.ascendancy_content_point {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    /*overflow: hidden;*/
+}
+.ascendancy_content_point5, .ascendancy_content_point6{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #14709f;
+}
+.ascendancy_content_point>div{margin-top:-5px;}
+.col-4{width:33.33%;float:left;}
+.col-5{
+    width: 50%;float:left;
+}
+.ascendancy_content_point div:nth-of-type(1){padding:0;}
+.ascendancy_content_point div:nth-of-type(2){text-align: center;}
+.ascendancy_content_point div:nth-of-type(2) div{margin:0 auto;}
+.ascendancy_content_point div:nth-of-type(3){padding-right:0;position: relative}
+.ascendancy_content_point div:nth-of-type(3) div{position: absolute;right:0;}
+.ascendancy_content_point5{
+    position: absolute;right:0;
+}
+.ascendancy_content_point8{
+    position: absolute;
+}
+.ascendancy_content_point1,.ascendancy_content_point2,.ascendancy_content_point3{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #14709f;
+}
+.ascendancy_content_point{
+
+}
 
 /*首页*/
  /*顶部*/
@@ -31,10 +100,10 @@ a:hover,a:visited,a:active,a:link{text-decoration: none}
 
 /*我们的优势*/
 .ascendancy{margin-top:20px}
-.ascendancy_title{font-size:18px;border-bottom: 1px solid rgb(64,139,177)}
+.ascendancy_title{font-size:18px;/*border-bottom: 1px solid rgb(64,139,177)*/}
 .ascendancy_title i{margin-right:10px}
 .ascendancy_title img{width:40px;height:40px}
-.ascendancy_content{text-align: center;margin-top:15px;}
+.ascendancy_content{text-align: center;margin:40px 0;}
 /*.ascendancy_content_a+.ascendancy_content_a{border-left:1px solid black}*/
 .ascendancy_content div{position: relative}
 .ascendancy_04{position: absolute;right:0;top:30px;height:90px}
@@ -93,8 +162,9 @@ a:hover,a:visited,a:active,a:link{text-decoration: none}
     .center_sea>div:nth-of-type(2){margin-top:15px;}
     .travel_title{padding:10px 0 0 25px !important;}
 }
-@media (max-width: 1024px){
+@media (max-width: 1023px){
     .center_school{margin-top:15px;}
+
 }
 @media (max-width: 1282px){
     .navbar-nav{margin-top:15px;}
@@ -104,7 +174,8 @@ a:hover,a:visited,a:active,a:link{text-decoration: none}
 }
 @media (min-width:768px) and (max-width:1024px){
     .company_content_img_1{margin-bottom:10px;}
-    /*.center_school{margin-top:27px;}*/
+    .travel_title{padding: 10px 0 0 25px !important;}
+
 }
 .index_service div img:nth-of-type(1){width:100%;margin-top:15px;}
 .index_service{background-color: rgb(246,246,246)}
